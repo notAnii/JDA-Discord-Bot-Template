@@ -11,6 +11,6 @@ Template for building a basic Discord bot with Java using JDA (Java Discord API)
 <dependency>
     <groupId>net.dv8tion</groupId>
     <artifactId>JDA</artifactId>
-    <version>1.2.1_106</version>
+    <version>###desired-version###</version>
 </dependency>
 ```
