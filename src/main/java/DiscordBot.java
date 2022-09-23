@@ -1,4 +1,5 @@
 import commands.CommandListener;
+import constants.Secret;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
@@ -12,7 +13,7 @@ public class DiscordBot {
     public static JDABuilder builder;
 
     public static void main(String[] args) throws LoginException {
-        String token = ""; //your bot token
+        String token = Secret.token; //your bot token
         builder = JDABuilder.createDefault(token);
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
         builder.setBulkDeleteSplittingEnabled(false);
